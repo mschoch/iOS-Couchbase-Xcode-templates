@@ -16,7 +16,7 @@ This is the first release of the template.  It is intended as developer preview.
 
 * git clone https://github.com/mschoch/iOS-Couchbase-Xcode-templates.git
 
-* Launc Xcode
+* Launch Xcode
 
 * Select File > New > New Project...
 
