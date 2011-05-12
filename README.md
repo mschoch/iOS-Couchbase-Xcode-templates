@@ -53,6 +53,8 @@ This is the first release of the template.  It is intended as developer preview.
 * Refactor the layout of files to make it easier to support multiple templates (take advantage of the inheritance model that these templates support)
 * Add support for a few more types of templates (low priority, but should be straighforward to support all the defaults Apple ships with)
 * Add proper support for linking to the libraries (need better documentation around Xcode 4 project template files, doesn't seem community has figured it all out yet, see THANKS below)
+* Integrate this with main Mobile Couchbase repo
+* Possibly create simple installer to streamline this further
 
 ### Thanks
 
