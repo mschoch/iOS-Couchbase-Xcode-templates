@@ -38,5 +38,10 @@ This is the first release of the template.  It is intended as developer preview.
 
 * If you select iPhone 4.3 Simulator and press the Run button you should see
 
+<img src="https://github.com/mschoch/iOS-Couchbase-Xcode-templates/raw/master/doc/resources/005.png" width="400"/>
+
+* In the console, you should see
+
+<img src="https://github.com/mschoch/iOS-Couchbase-Xcode-templates/raw/master/doc/resources/006.png" width="400"/>
 
 
