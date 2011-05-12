@@ -44,4 +44,22 @@ This is the first release of the template.  It is intended as developer preview.
 
 <img src="https://github.com/mschoch/iOS-Couchbase-Xcode-templates/raw/master/doc/resources/006.png" width="400"/>
 
+### Known Issues
 
+* Linkage to libraries is a bit fragile, mainly do to lack of documentation around Xcode 4 project templates
+
+### Future Plans
+
+* Refactor the layout of files to make it easier to support multiple templates (take advantage of the inheritance model that these templates support)
+* Add support for a few more types of templates (low priority, but should be straighforward to support all the defaults Apple ships with)
+* Add proper support for linking to the libraries (need better documentation around Xcode 4 project template files, doesn't seem community has figured it all out yet, see THANKS below)
+
+### Thanks
+
+This work was only possible because of the information I was able to find at these sites:
+
+* http://blog.boreal-kiss.net/2011/03/11/a-minimal-project-template-for-xcode-4/
+* http://snipt.net/yonishin/about-xcode-4-project-template
+* https://github.com/cocos2d/cocos2d-iphone/tree/develop/templates/Xcode4_templates
+
+And of course the Mobile Couchbase project https://github.com/couchbaselabs/iOS-Couchbase
