@@ -209,7 +209,7 @@
 			<key>SharedSettings</key>
 			<dict>
 				<key>OTHER_LDFLAGS</key>
-				<string>-lstdc++ -lCouchbase-iphonesimulator -lTouchJSON-iphonesimulator -lCouchbase-iphoneos -lTouchJSON-iphoneos -L${SRCROOT}/___PACKAGENAME___</string>
+				<string>-lstdc++ -lCouchbase-iphonesimulator -lTouchJSON-iphonesimulator -lCouchbase-iphoneos -lTouchJSON-iphoneos -L"${SRCROOT}/___PACKAGENAME___"</string>
 			</dict>
 		</dict>
 	</array>
