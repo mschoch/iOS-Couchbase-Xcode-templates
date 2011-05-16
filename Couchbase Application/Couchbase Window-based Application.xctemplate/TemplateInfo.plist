@@ -40,7 +40,14 @@
 							<string>Supporting Files</string>
 							<key>Path</key>
 							<string>Couchbase.bundle</string>
-						</dict>
+						</dict>		
+						<key>futon.bundle</key>
+						<dict>
+							<key>Group</key>
+							<string>Supporting Files</string>
+							<key>Path</key>
+							<string>futon.bundle</string>
+						</dict>								
 						<key>libTouchJSON-iphoneos.a</key>
 						<dict>
 							<key>Group</key>
@@ -91,6 +98,7 @@
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</string>
 		<string>Couchbase.h</string>
 		<string>Couchbase.bundle</string>
+		<string>futon.bundle</string>		
 		<string>libTouchJSON-iphoneos.a</string>
 		<string>libTouchJSON-iphonesimulator.a</string>
 		<string>libCouchbase-iphoneos.a</string>
