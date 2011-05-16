@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaTouchFamiliedApplication</string>
+		<string>com.couchbase.base</string>		
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>FirstViewController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>FirstViewController.h</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>SecondViewController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>SecondViewController.h</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchivars</key>
+		<dict>
+			<key>Beginning</key>
+			<string>@interface ___PACKAGENAMEASIDENTIFIER___AppDelegate : NSObject &lt;UIApplicationDelegate, UITabBarControllerDelegate, CouchbaseDelegate&gt; {
+</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchmethods:tabBarController</key>
+		<string>@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</key>
+		<string>// Add the tab bar controller's current view as a subview of the window
+self.window.rootViewController = self.tabBarController;
+[self.window makeKeyAndVisible];
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:tabBarMethods</key>
+		<string>/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+}
+*/
+
+/*
+// Optional UITabBarControllerDelegate method.
+- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+{
+}
+*/
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for a Couchbase application that uses a tab bar. It provides a user interface configured with a tab bar controller, a view controller for the first tab bar item and a Couchbase instance.</string>
+	<key>Identifier</key>
+	<string>com.couchbase.dt.unit.tabBarApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchmethods:tabBarController</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:tabBarController=_tabBarController</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:tabBarMethods</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:_tabBarController</string>
+		<string>FirstViewController.h</string>
+		<string>FirstViewController.m</string>
+		<string>SecondViewController.h</string>
+		<string>SecondViewController.m</string>
+		<string>en.lproj/FirstView.xib</string>
+		<string>en.lproj/SecondView.xib</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>deviceFamily</string>
+			<key>Units</key>
+			<dict>
+				<key>iPad</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>FirstViewController.m</key>
+						<dict>
+							<key>Path</key>
+							<string>FirstViewControlleriPad.m</string>
+						</dict>
+						<key>SecondViewController.m</key>
+						<dict>
+							<key>Path</key>
+							<string>SecondViewControlleriPad.m</string>
+						</dict>
+						<key>en.lproj/FirstView.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>FirstViewiPad.xib</string>
+						</dict>
+						<key>en.lproj/MainWindow.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>MainWindowiPad.xib</string>
+						</dict>
+						<key>en.lproj/SecondView.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>SecondViewiPad.xib</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>FirstViewController.m</key>
+						<dict>
+							<key>Path</key>
+							<string>FirstViewControlleriPhone.m</string>
+						</dict>
+						<key>SecondViewController.m</key>
+						<dict>
+							<key>Path</key>
+							<string>SecondViewControlleriPhone.m</string>
+						</dict>
+						<key>en.lproj/FirstView.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>FirstViewiPhone.xib</string>
+						</dict>
+						<key>en.lproj/MainWindow.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>MainWindowiPhone.xib</string>
+						</dict>
+						<key>en.lproj/SecondView.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>SecondViewiPhone.xib</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.couchbase.base</string>
+	<key>Description</key>
+	<string>This template provides the base for including Couchbase into an application.</string>	
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Definitions</key>
+	<dict>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:ivars</key>
+		<string></string>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods</key>
+		<string></string>		
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:methods:window</key>
+		<string></string>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchmethods:window</key>
+		<string>@property (nonatomic, retain) IBOutlet UIWindow *window;
+</string>		
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchend</key>
+		<string>@end</string>		
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchivars</key>
+		<dict>
+			<key>Beginning</key>
+			<string>@interface ___PACKAGENAMEASIDENTIFIER___AppDelegate : NSObject &lt;UIApplicationDelegate, CouchbaseDelegate&gt; {
+</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:startCouchbase</key>
+		<string>[Couchbase startCouchbase:self]; // pass optional URL or port
+</string>		
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</key>
+		<string>-(void)couchbaseDidStart:(NSURL *)serverURL {
+    /*
+     Called when Couchbase has finished starting
+     */
+    NSLog(@"Couch is ready!");
+}
+		</string>
+		<key>Couchbase.h</key>
+		<dict>
+			<key>Path</key>
+			<string>Couchbase.h</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Couchbase.bundle</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Couchbase.bundle</string>
+		</dict>		
+		<key>futon.bundle</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>futon.bundle</string>
+		</dict>								
+		<key>libTouchJSON-iphoneos.a</key>
+		<dict>
+			<key>Group</key>
+			<string>Libraries</string>
+			<key>Path</key>
+			<string>libTouchJSON-iphoneos.a</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>libTouchJSON-iphonesimulator.a</key>
+		<dict>
+			<key>Group</key>
+			<string>Libraries</string>
+			<key>Path</key>
+			<string>libTouchJSON-iphonesimulator.a</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>libCouchbase-iphoneos.a</key>
+		<dict>
+			<key>Group</key>
+			<string>Libraries</string>
+			<key>Path</key>
+			<string>libCouchbase-iphoneos.a</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>libCouchbase-iphonesimulator.a</key>
+		<dict>
+			<key>Group</key>
+			<string>Libraries</string>
+			<key>Path</key>
+			<string>libCouchbase-iphonesimulator.a</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:import:Couchbase.h</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchivars</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchmethods:window</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchend</string>		
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:startCouchbase</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</string>
+		<string>Couchbase.h</string>
+		<string>Couchbase.bundle</string>
+		<string>futon.bundle</string>		
+		<string>libTouchJSON-iphoneos.a</string>
+		<string>libTouchJSON-iphonesimulator.a</string>
+		<string>libCouchbase-iphoneos.a</string>
+		<string>libCouchbase-iphonesimulator.a</string>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Configurations</key>
+			<dict>
+				<key>Release</key>
+				<dict>
+					<key>VALIDATE_PRODUCT</key>
+					<string>YES</string>
+				</dict>
+			</dict>
+			<key>Frameworks</key>
+			<array>
+				<string>UIKit</string>
+				<string>Foundation</string>
+				<string>CoreGraphics</string>
+			</array>
+			<key>SharedSettings</key>
+			<dict>
+				<key>OTHER_LDFLAGS</key>
+				<string>-lstdc++ -lCouchbase-iphonesimulator -lTouchJSON-iphonesimulator -lCouchbase-iphoneos -lTouchJSON-iphoneos -L"${SRCROOT}/___PACKAGENAME___"</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

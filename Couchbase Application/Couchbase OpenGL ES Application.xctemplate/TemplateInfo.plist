@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaTouchFamiliedApplication</string>
+		<string>com.couchbase.base</string>		
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Definitions</key>
+	<dict>
+		<key>EAGLView.h</key>
+		<dict>
+			<key>Path</key>
+			<string>EAGLView.h</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>EAGLView.m</key>
+		<dict>
+			<key>Path</key>
+			<string>EAGLView.m</string>
+		</dict>
+		<key>Shaders/Shader.fsh</key>
+		<dict>
+			<key>Path</key>
+			<string>Shader.fsh</string>
+		</dict>
+		<key>Shaders/Shader.vsh</key>
+		<dict>
+			<key>Path</key>
+			<string>Shader.vsh</string>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchmethods:viewController</key>
+		<string>@property (nonatomic, retain) IBOutlet ___PACKAGENAMEASIDENTIFIER___ViewController *viewController;
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:*:addViewControllerView</key>
+		<string>self.window.rootViewController = self.viewController;
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:*:startAnimation</key>
+		<string>[self.viewController startAnimation];
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:*:stopAnimation</key>
+		<string>[self.viewController stopAnimation];
+</string>
+		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)applicationWillResignActive:(UIApplication *)application
+{</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___ViewController.h</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>___PACKAGENAMEASIDENTIFIER___ViewController.m</key>
+		<dict>
+			<key>Path</key>
+			<string>___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
+		</dict>
+		<key>___PACKAGENAME___-Info.plist:UIStatusBarHidden</key>
+		<string>&lt;key&gt;UIStatusBarHidden&lt;/key&gt;
+&lt;true/&gt;
+</string>
+	</dict>
+	<key>Description</key>
+	<string>This template provides a starting point for a Couchbase application that uses an OpenGL ES-based view. It provides a view into which you render your OpenGL ES scene, a timer to allow you to animate the view and a Couchbase instance.</string>
+	<key>Identifier</key>
+	<string>com.couchbase.dt.unit.openGLESApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Nodes</key>
+	<array>
+		<string>___PACKAGENAME___-Info.plist:UIStatusBarHidden</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:class:___PACKAGENAMEASIDENTIFIER___ViewController</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h:couchmethods:viewController</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:EAGLView.h</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:import:___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:synthesize:viewController=_viewController</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:addViewControllerView</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillTerminate:stopAnimation</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive:comments</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationDidBecomeActive:startAnimation</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationWillResignActive:stopAnimation</string>
+		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:dealloc:_viewController</string>
+		<string>Shaders/Shader.fsh</string>
+		<string>Shaders/Shader.vsh</string>
+		<string>EAGLView.h</string>
+		<string>EAGLView.m</string>
+		<string>___PACKAGENAMEASIDENTIFIER___ViewController.h</string>
+		<string>___PACKAGENAMEASIDENTIFIER___ViewController.m</string>
+		<string>en.lproj/___PACKAGENAMEASIDENTIFIER___ViewController.xib</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>deviceFamily</string>
+			<key>Units</key>
+			<dict>
+				<key>iPad</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>en.lproj/MainWindow.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>MainWindowiPad.xib</string>
+						</dict>
+						<key>en.lproj/___PACKAGENAMEASIDENTIFIER___ViewController.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>___PACKAGENAMEASIDENTIFIER___ViewControlleriPad.xib</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>en.lproj/MainWindow.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>MainWindowiPhone.xib</string>
+						</dict>
+						<key>en.lproj/___PACKAGENAMEASIDENTIFIER___ViewController.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>___PACKAGENAMEASIDENTIFIER___ViewControlleriPhone.xib</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>QuartzCore</string>
+				<string>OpenGLES</string>
+			</array>
+			<key>SharedSettings</key>
+			<dict>
+				<key>GCC_THUMB_SUPPORT[arch=armv6]</key>
+				<string></string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
