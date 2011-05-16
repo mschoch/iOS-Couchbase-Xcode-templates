@@ -3,106 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>Ancestors</key>
-	<array>
+	<array>	
 		<string>com.apple.dt.unit.cocoaTouchUniversalApplication</string>
 		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+		<string>com.couchbase.base</string>		
 	</array>
 	<key>Concrete</key>
 	<true/>
 	<key>Definitions</key>
 	<dict>
-						<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.h</key>
-						<dict>
-							<key>Path</key>
-							<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h</string>
-							<key>TargetIndices</key>
-							<array/>
-						</dict>
 		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:makeKeyAndVisible</key>
-		<string>[Couchbase startCouchbase:self];
-[self.window makeKeyAndVisible];
+		<string>[self.window makeKeyAndVisible];
 </string>
-		<key>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</key>
-		<string>-(void)couchbaseDidStart:(NSURL *)serverURL {
-    NSLog(@"Couch is ready!");
-}
-</string>
-						<key>Couchbase.h</key>
-						<dict>
-							<key>Path</key>
-							<string>Couchbase.h</string>
-							<key>TargetIndices</key>
-							<array/>
-						</dict>
-						<key>Couchbase.bundle</key>
-						<dict>
-							<key>Group</key>
-							<string>Supporting Files</string>
-							<key>Path</key>
-							<string>Couchbase.bundle</string>
-						</dict>		
-						<key>futon.bundle</key>
-						<dict>
-							<key>Group</key>
-							<string>Supporting Files</string>
-							<key>Path</key>
-							<string>futon.bundle</string>
-						</dict>								
-						<key>libTouchJSON-iphoneos.a</key>
-						<dict>
-							<key>Group</key>
-							<string>Libraries</string>
-							<key>Path</key>
-							<string>libTouchJSON-iphoneos.a</string>
-							<key>TargetIndices</key>
-							<array/>
-						</dict>
-						<key>libTouchJSON-iphonesimulator.a</key>
-						<dict>
-							<key>Group</key>
-							<string>Libraries</string>
-							<key>Path</key>
-							<string>libTouchJSON-iphonesimulator.a</string>
-							<key>TargetIndices</key>
-							<array/>
-						</dict>
-						<key>libCouchbase-iphoneos.a</key>
-						<dict>
-							<key>Group</key>
-							<string>Libraries</string>
-							<key>Path</key>
-							<string>libCouchbase-iphoneos.a</string>
-							<key>TargetIndices</key>
-							<array/>
-						</dict>
-						<key>libCouchbase-iphonesimulator.a</key>
-						<dict>
-							<key>Group</key>
-							<string>Libraries</string>
-							<key>Path</key>
-							<string>libCouchbase-iphonesimulator.a</string>
-							<key>TargetIndices</key>
-							<array/>
-						</dict>
 	</dict>
 	<key>Description</key>
-	<string>This template provides a starting point for any application. It provides just an application delegate and a window.</string>
+	<string>This template provides a starting point for any Couchbase application. It provides just an application delegate, a window, and a Couchbase instance.</string>
 	<key>Identifier</key>
 	<string>com.couchbase.dt.unit.windowBasedApplication</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.h</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:makeKeyAndVisible</string>
-		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</string>
-		<string>Couchbase.h</string>
-		<string>Couchbase.bundle</string>
-		<string>futon.bundle</string>		
-		<string>libTouchJSON-iphoneos.a</string>
-		<string>libTouchJSON-iphonesimulator.a</string>
-		<string>libCouchbase-iphoneos.a</string>
-		<string>libCouchbase-iphonesimulator.a</string>
 	</array>
 	<key>Options</key>
 	<array>
@@ -111,28 +33,6 @@
 			<string>universalDeviceFamily</string>
 			<key>Units</key>
 			<dict>
-				<key>iPad</key>
-				<dict>
-					<key>Definitions</key>
-					<dict>
-						<key>en.lproj/MainWindow.xib</key>
-						<dict>
-							<key>Path</key>
-							<string>MainWindow_iPad.xib</string>
-						</dict>
-					</dict>
-				</dict>
-				<key>iPhone</key>
-				<dict>
-					<key>Definitions</key>
-					<dict>
-						<key>en.lproj/MainWindow.xib</key>
-						<dict>
-							<key>Path</key>
-							<string>MainWindow_iPhone.xib</string>
-						</dict>
-					</dict>
-				</dict>
 				<key>Universal</key>
 				<dict>
 					<key>Definitions</key>
@@ -194,30 +94,28 @@
 						<string>iPad/en.lproj/MainWindow_iPad.xib</string>
 					</array>
 				</dict>
-			</dict>
-		</dict>
-	</array>
-	<key>Targets</key>
-	<array>
-		<dict>
-			<key>Configurations</key>
-			<dict>
-				<key>Release</key>
+				<key>iPad</key>
 				<dict>
-					<key>VALIDATE_PRODUCT</key>
-					<string>YES</string>
+					<key>Definitions</key>
+					<dict>
+						<key>en.lproj/MainWindow.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>MainWindow_iPad.xib</string>
+						</dict>
+					</dict>
 				</dict>
-			</dict>
-			<key>Frameworks</key>
-			<array>
-				<string>UIKit</string>
-				<string>Foundation</string>
-				<string>CoreGraphics</string>
-			</array>
-			<key>SharedSettings</key>
-			<dict>
-				<key>OTHER_LDFLAGS</key>
-				<string>-lstdc++ -lCouchbase-iphonesimulator -lTouchJSON-iphonesimulator -lCouchbase-iphoneos -lTouchJSON-iphoneos -L"${SRCROOT}/___PACKAGENAME___"</string>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>en.lproj/MainWindow.xib</key>
+						<dict>
+							<key>Path</key>
+							<string>MainWindow_iPhone.xib</string>
+						</dict>
+					</dict>
+				</dict>
 			</dict>
 		</dict>
 	</array>
