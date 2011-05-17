@@ -4,7 +4,7 @@ These templates allow you to quickly get started integrating CouchDB into your n
 
 ### Current Status
 
-This is the first release of the template.  It is intended as developer preview.  Your Xcode MAY crash as a result of this template. 
+This is the second release of the template.  It is intended as developer preview.  Your Xcode MAY crash as a result of this template. 
 
 ### Getting Started
 
@@ -20,7 +20,7 @@ This is the first release of the template.  It is intended as developer preview.
 
 * Select File > New > New Project...
 
-* You should see a Couchbase Application group on the left hand side, then select Couchbase Window-based Application
+* You should see a Couchbase Application group on the left hand side, then several Couchbase variants of the main Application templates, select the one you'd like to use (the subsequent screens assume you chose Couchbase Window-based Application)
 
 <img src="https://github.com/mschoch/iOS-Couchbase-Xcode-templates/raw/master/doc/resources/001.png" width="400"/>
 
@@ -50,8 +50,6 @@ This is the first release of the template.  It is intended as developer preview.
 
 ### Future Plans
 
-* Refactor the layout of files to make it easier to support multiple templates (take advantage of the inheritance model that these templates support)
-* Add support for a few more types of templates (low priority, but should be straighforward to support all the defaults Apple ships with)
 * Add proper support for linking to the libraries (need better documentation around Xcode 4 project template files, doesn't seem community has figured it all out yet, see THANKS below)
 * Integrate this with main Mobile Couchbase repo
 * Possibly create simple installer to streamline this further
