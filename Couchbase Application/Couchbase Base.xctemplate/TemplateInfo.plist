@@ -63,13 +63,6 @@
 			<string>Supporting Files</string>
 			<key>Path</key>
 			<string>Couchbase.bundle</string>
-		</dict>		
-		<key>futon.bundle</key>
-		<dict>
-			<key>Group</key>
-			<string>Supporting Files</string>
-			<key>Path</key>
-			<string>futon.bundle</string>
 		</dict>								
 		<key>libTouchJSON-iphoneos.a</key>
 		<dict>
@@ -117,8 +110,7 @@
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:applicationdidFinishLaunchingWithOptions:startCouchbase</string>
 		<string>___PACKAGENAMEASIDENTIFIER___AppDelegate.m:couchbaseDidStart:couchIsReady</string>
 		<string>Couchbase.h</string>
-		<string>Couchbase.bundle</string>
-		<string>futon.bundle</string>		
+		<string>Couchbase.bundle</string>		
 		<string>libTouchJSON-iphoneos.a</string>
 		<string>libTouchJSON-iphonesimulator.a</string>
 		<string>libCouchbase-iphoneos.a</string>
@@ -148,5 +140,40 @@
 			</dict>
 		</dict>
 	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>false</string>
+			<key>Description</key>
+			<string>Indicates whether the application should include Futon</string>
+			<key>Identifier</key>
+			<string>futon</string>
+			<key>Name</key>
+			<string>Include Futon</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>futon.bundle</key>
+						<dict>
+							<key>Group</key>
+							<string>Supporting Files</string>
+							<key>Path</key>
+							<string>futon.bundle</string>
+						</dict>		
+					</dict>
+					<key>Nodes</key>
+					<array>
+						<string>futon.bundle</string>
+					</array>
+				</dict>
+			</dict>
+		</dict>
+	</array>	
 </dict>
 </plist>
